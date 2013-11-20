@@ -53,7 +53,7 @@
         
         
         var sharedProjectId = "";               // used to store the projectid of the project to be shared
-        
+        var empty = "";
         // Used to grab project id when "Share" link is initially clicked
         $(".shareInitialize").click(function(event){
             event.preventDefault();

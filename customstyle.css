@@ -1,0 +1,87 @@
+div.navbar{
+height: 5em;
+background-color: #36c;
+border-color: #236;
+box-shadow: -2px 5px 15px #aaa;
+
+}
+
+body { padding-top: 6em; }
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #444;
+    font-size: 20px;
+}
+
+
+
+ul.navbar-nav{
+  margin-left: 3em;
+}
+
+ul.navbar-nav, form.navbar-form{
+    margin-top: 2.1em;
+}
+
+.navbar .nav > li.current > a{
+    color: #fff;
+    background-color: #236;
+}
+
+.navbar .nav > li > a {
+    color: #ddd;
+    background-color: #36c;
+    padding: 10px;
+}
+
+.btn .btn-primary .btn-lg .signup{
+  background-color: green;
+}
+
+li a:hover{
+    color: #fff;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin > input{
+	margin-bottom: 3px;
+}
+
+button.signup{
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+.btn-primary:hover{
+	background-color: #47a447;
+  	border-color: #398439;
+}
+
+.error{
+  color: red;
+  font-weight: normal;
+}
+
+div.container.content{
+  margin-top: 4em;
+  text-align: center;
+}
+
+li#username-item{
+  color: #fff;
+  margin-left: 20px;
+  padding: 10px;
+}

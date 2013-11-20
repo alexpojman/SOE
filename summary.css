@@ -1,0 +1,107 @@
+div#chapters {
+                background-color: #eee;
+                float: left;
+                padding-top: 5px;
+                width: 290px;
+                font-size: 14px;
+                padding-bottom: 20px;
+                border: 1px solid #339;
+
+            }
+            
+            h2#chaptername {
+                text-align: center;
+            }
+            
+            #tab_title, #tab_subtitle {
+                border: 1px solid #339;
+                font-size: 16px;
+                padding: 5px;
+            }
+            
+            p.notetext {
+                pointer: text;
+            }
+            
+            #add_tab {
+                font-weight: bold;
+                margin-top: 15px;
+                margin-right: 25px;
+                float: right;
+            }
+            
+            .notecontrols {
+                
+            }
+            
+            .note {
+                border-left: 1px solid #ddd;
+                padding-left: 5px;
+                margin-bottom: 15px;
+            }
+            
+            .note:hover{
+                border-left: 1px solid #999;
+            }
+            
+            div#content {
+                color: #444;
+                font-family: "Helvetica";
+            }
+            
+            div#header {
+                background-color: #36c;
+                border-bottom: 2px solid #339;
+                height: 100px;
+                margin: 0px;
+            }
+            
+            div#tabs {
+                padding: 0px; 
+                background: none; 
+                border-width: 0px;
+                width: 100%;
+            }
+            
+            h1#projectname {
+                font-size: 22px;
+                margin-left: 20px;
+            }
+            
+            img{
+                border: 0px;
+            }
+            
+            .chaptercontrols{
+                float: right;
+            }
+            
+            #dialog label, #dialog input { display:block; }
+            #dialog label { margin-top: 0.5em; }
+            #dialog input, #dialog textarea { width: 95%; }
+            
+            /* Vertical Tabs
+            ----------------------------------*/
+            .ui-tabs-vertical .ui-tabs-nav { float: right; }
+            .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important;}
+            .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+            .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+            
+            .ui-state-default {
+                margin-bottom: -2px;
+            }
+
+            div.notes{
+    margin-top: 25px;
+    text-align: left;
+}
+
+div.ui-tabs-panel{
+    margin-top: -20px;
+}
+
+textarea.newnote{
+    margin-right: 5px;
+    width: 400px;
+    height: 100px;
+}

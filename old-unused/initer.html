@@ -1,0 +1,39 @@
+<html>
+	<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script>
+		function getData(projectid){
+			$.post("getChapters.php", {projectid: projectid}, function(data){
+				
+				var chapters = jQuery.parseJSON(data);
+				$.each(chapters, function(i, chapter){
+					$("div#here").append("<div id='chap"+chapter.id+"'><h2>"+chapter.name+"</h2>"); //Append chapter titles
+					
+					$.post("getNotes.php", {chapterid: chapter.id}, function(data){
+						console.log(data);
+						var notes = jQuery.parseJSON(data);
+						$.each(notes, function(i, note){
+							$("div#chap"+chapter.id).append("<p id='"+note.id+"'>"+note.content+"</p>");
+						});
+
+					});
+
+					$("div#here").append("</div>");
+				});
+				//Do something
+
+			});
+		}
+
+		$(document).ready(function() {
+			getData(9);
+		});
+	</script>
+	</head>
+	<body>
+		<div id="here">
+			See:<br /><br />
+		</div>
+	</body>
+</html>
